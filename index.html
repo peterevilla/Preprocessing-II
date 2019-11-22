@@ -73,20 +73,48 @@
       <div class="destination">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button class="btn">Sign Me Up!</button>
+        <button class="btn" onclick="openForm()">Sign Me Up!</button>
       </div>
       <div class="destination">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button class="btn">Sign Me Up!</button>
+        <button class="btn" onclick="openForm()">Sign Me Up!</button>
       </div>
       <div class="destination">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button class="btn">Sign Me Up!</button>
+        <button class="btn" onclick="openForm()">Sign Me Up!</button>
       </div>
     </section>
   </div><!-- container -->
+
+
+  <button class="open-button" onclick="openForm()">Sign Me Up!</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b></b></label>
+    <textarea type="password" placeholder="Tell us more How do you want in your next trip!" name="psw" required></textarea>
+
+    <button type="submit" class="btn">Summit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
 
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
